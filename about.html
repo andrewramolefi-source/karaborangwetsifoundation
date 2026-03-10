@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Karabo Rangwetsi Foundation</title>
+    
+    <!-- Open Graph for WhatsApp/Social Preview -->
+    <meta property="og:title" content="About KRF - Our Mission & Vision">
+    <meta property="og:description" content="Learn about our commitment to providing professional support services to victims and survivors of abuse and sexual violence.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1573497620053-ea5310f94f17?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts & Icons -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        :root {
+            --primary: #1e3a8a; /* Deep Blue */
+            --accent: #f97316;  /* Orange */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .page-header {
+            background: linear-gradient(rgba(30, 58, 138, 0.9), rgba(30, 58, 138, 0.9)), 
+                        url('https://images.unsplash.com/photo-1521791136064-7986c2923216?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24 items-center">
+                <!-- Adjusted Logo & Brand -->
+                <a href="index.html" class="flex items-center gap-4 group">
+                    <div class="relative overflow-hidden rounded-lg shadow-sm border border-slate-100 bg-white p-1">
+                        <img src="https://res.cloudinary.com/dykgraurr/image/upload/logo.jpeg_fu9gu0" alt="Logo" class="h-12 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.style.display='none'">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-lg md:text-xl font-extrabold text-blue-900 tracking-tight leading-none">Karabo Rangwetsi</span>
+                        <span class="text-sm font-bold text-orange-500 uppercase tracking-widest mt-0.5">Foundation</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu Links Aligned Right -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="about.html" class="font-semibold text-slate-600 hover:text-orange-500 transition-colors">About</a>
+                    <a href="index.html#pillars" class="font-semibold text-slate-600 hover:text-orange-500 transition-colors">Our Pillars</a>
+                    <a href="index.html#book" class="font-semibold text-slate-600 hover:text-orange-500 transition-colors">The Book</a>
+                    <a href="index.html#contact" class="bg-blue-900 text-white px-6 py-3 rounded-full font-bold hover:bg-orange-600 transition shadow-md active:scale-95">
+                        Get Involved
+                    </a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-600 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden bg-white border-b border-slate-100 md:hidden p-4 space-y-4 shadow-lg">
+            <a href="index.html" class="block text-lg font-semibold text-slate-600 hover:text-orange-500 transition">Home</a>
+            <a href="about.html" class="block text-lg font-bold text-orange-500">About Us</a>
+            <a href="index.html#pillars" class="block text-lg font-semibold text-slate-600 hover:text-orange-500 transition">Our Pillars</a>
+            <a href="index.html#contact" class="block bg-blue-900 text-white p-3 rounded-lg text-center font-bold">Get Involved</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header pt-48 pb-24 text-center text-white px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">About the Foundation</h1>
+            <div class="h-1 w-20 bg-orange-500 mx-auto rounded-full"></div>
+        </div>
+    </header>
+
+    <!-- About Content -->
+    <section class="py-20 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <h2 class="text-3xl font-bold text-blue-900 mb-6 underline decoration-orange-500 decoration-4 underline-offset-8">Who We Are</h2>
+                    <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                        The Karabo Rangwetsi Foundation (KRF) is a South African Non-Profit Organisation established to provide structured, professional and sustainable support services to victims and survivors of abuse and sexual violence.
+                    </p>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        We understand that the journey to recovery requires more than just immediate intervention; it requires a lifelong commitment to healing, dignity, and empowerment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Founder Section -->
+    <section class="py-24 px-4 bg-slate-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-5xl font-bold text-blue-900 mb-4">Our Founder</h2>
+                <div class="h-1.5 w-24 bg-orange-500 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-12 items-start">
+                <div class="md:col-span-1 reveal">
+                    <div class="relative">
+                        <img src="https://res.cloudinary.com/dykgraurr/image/upload/founder.jpeg_avwaov" alt="Karabo Rangwetsi" class="rounded-2xl shadow-xl border-8 border-white">
+                        <div class="absolute -bottom-6 -right-6 bg-orange-500 text-white p-6 rounded-2xl shadow-lg hidden lg:block">
+                            <p class="font-bold text-xl leading-tight">30 Years</p>
+                            <p class="text-sm opacity-90">of Excellence</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 space-y-4">
+                        <h3 class="text-2xl font-bold text-blue-900">Karabo Rangwetsi</h3>
+                        <p class="text-orange-600 font-semibold uppercase tracking-wider text-sm">Broadcaster • Humanitarian • Overcomer</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-slate-400 hover:text-blue-900 transition text-xl"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" class="text-slate-400 hover:text-blue-900 transition text-xl"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 space-y-6 text-slate-700 leading-relaxed reveal">
+                    <p>
+                        Karabo Rangwetsi is a seasoned broadcaster with nearly 30 years of experience in television and radio. Her journey in broadcasting began in 1997 with the Bophuthatswana Broadcasting Corporation as a young Reporter driven by curiosity and passion. In 1999, she joined South Africa’s public broadcaster, the SABC as a News Writer during the general elections – a temporary assignment that turned into a lifelong career.
+                    </p>
+                    <p>
+                        That same year, she helped pioneer Vodacom Newsbreak, South Africa’s first cellphone news service, as both Compiler and Presenter. Karabo later moved to SABC Africa, an international television channel, serving as a News Producer and Presenter between 2000 and 2002, before joining Channel Africa, the SABC’s international radio station. Over the next two decades, she steadily rose through the ranks: from Senior Producer to Executive Producer for Current Affairs, and later for News and the Channel Africa website.
+                    </p>
+                    <p>
+                        Between 2019 and 2021, Karabo took on a senior leadership role at Channel Africa as Acting Programme Manager before officially becoming Programme Manager in 2021. Between 2022 and 2025, she held a position of Acting Business Manager, while still occupying her office as Programme Manager. After almost three decades of service to the public broadcaster, Karabo resigned in January 2025 to pursue her personal mission – to help others heal, grow and live with purpose.
+                    </p>
+                    <div class="bg-blue-900 text-white p-8 rounded-2xl shadow-inner my-8">
+                        <p class="text-xl italic font-medium">
+                            “You can rewrite your story – no matter how it began.”
+                        </p>
+                    </div>
+                    <p>
+                        Beyond the newsroom, Karabo is a tireless humanitarian. She dedicates her time to charity work, motivational speaking and mentorship. She is passionate about offering emotional support to the victims and survivors of any kind of abuse, regardless of their gender. 
+                    </p>
+                    <p>
+                        Having triumphed over multiple rapes, years of multiple abuses and surviving breast cancer twice in four years, Karabo calls herself not a survivor, but an overcomer. Her story is a testament to the resilience of humans and the transformative power of faith.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section class="py-24 bg-blue-900 text-white px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+            <!-- Vision -->
+            <div class="bg-white/5 border border-white/10 p-10 rounded-3xl reveal">
+                <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mb-8">
+                    <i class="fa-solid fa-eye text-3xl"></i>
+                </div>
+                <h3 class="text-3xl font-bold mb-6">Our Vision</h3>
+                <p class="text-xl text-blue-100 leading-relaxed italic">
+                    "To create a safe and supportive society where victims and survivors of abuse and sexual violence are empowered to rebuild their lives with dignity, security and meaningful opportunity."
+                </p>
+            </div>
+            
+            <!-- Mission -->
+            <div class="bg-white/5 border border-white/10 p-10 rounded-3xl reveal">
+                <div class="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center mb-8">
+                    <i class="fa-solid fa-bullseye text-3xl"></i>
+                </div>
+                <h3 class="text-3xl font-bold mb-6">Our Mission</h3>
+                <p class="text-lg text-blue-100 leading-relaxed">
+                    KRF’s mission is to empower victims and survivors of abuse and sexual violence through professional support services, advocacy and meaningful community engagement. The foundation is committed to fostering hope, restoring dignity, building resilience and supporting victims and survivors on their journey towards long-term healing and recovery.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-24 px-4 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-blue-900 mb-16 reveal">The KRF Commitment</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="reveal p-6">
+                    <h4 class="font-bold text-orange-500 text-xl mb-2">Hope</h4>
+                    <p class="text-slate-500">Restoring the light in the darkest times.</p>
+                </div>
+                <div class="reveal p-6">
+                    <h4 class="font-bold text-orange-500 text-xl mb-2">Dignity</h4>
+                    <p class="text-slate-500">Treating every survivor with utmost respect.</p>
+                </div>
+                <div class="reveal p-6">
+                    <h4 class="font-bold text-orange-500 text-xl mb-2">Resilience</h4>
+                    <p class="text-slate-500">Building strength for long-term recovery.</p>
+                </div>
+                <div class="reveal p-6">
+                    <h4 class="font-bold text-orange-500 text-xl mb-2">Healing</h4>
+                    <p class="text-slate-500">Structured paths to psychological peace.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-20 px-4">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 items-start">
+            <!-- Brand Section with Adjusted Logo -->
+            <div class="col-span-2">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="bg-white p-1 rounded shadow-sm inline-flex items-center justify-center">
+                        <img src="https://res.cloudinary.com/dykgraurr/image/upload/logo.jpeg_fu9gu0" alt="KRF Logo" class="h-10 w-auto object-contain">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-bold text-white tracking-tight leading-none">Karabo Rangwetsi</span>
+                        <span class="text-xs font-bold text-orange-500 uppercase tracking-widest mt-1">Foundation</span>
+                    </div>
+                </div>
+                <p class="text-slate-400 max-w-sm mb-8 leading-relaxed">
+                    Registered Non-Profit Organization. Dedicated to the uplifting of South African communities through empathy, empowerment, and excellence.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/karaborangwetsifoundation/?hl=en" target="_blank" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Column -->
+            <div>
+                <h4 class="font-bold text-lg mb-6 text-white uppercase tracking-widest">Connect</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-envelope mt-1 text-orange-500"></i>
+                        <span>karaborangwetsifoundation@gmail.com</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-phone mt-1 text-orange-500"></i>
+                        <span>+27 83 596 0882</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot mt-1 text-orange-500"></i>
+                        <span>Johannesburg, South Africa</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto border-t border-slate-800 mt-16 pt-8 text-center">
+            <p class="text-slate-500 text-sm">
+                &copy; 2026 Karabo Rangwetsi Foundation. All Rights Reserved.
+            </p>
+            <div class="mt-2 text-[10px] text-slate-700 uppercase tracking-[0.2em]">
+                Designed by A.Ramolefi | Powered by Tailwind CSS
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Reveal Animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

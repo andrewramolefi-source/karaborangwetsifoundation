@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karabo Rangwetsi Foundation | Empowering Communities</title>
+    
+    <!-- Open Graph for WhatsApp/Social Preview -->
+    <meta property="og:title" content="Karabo Rangwetsi Foundation - Empowering the Future">
+    <meta property="og:description" content="Dedicated to community development, youth empowerment, and sustainable social change. Join our mission today.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1524062731293-8971abb040f9?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts & Icons -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        :root {
+            --primary: #1e3a8a; /* Deep Blue */
+            --accent: #f97316;  /* Orange */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(30, 58, 138, 0.85), rgba(30, 58, 138, 0.7)), 
+                        url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sticky-cta {
+            box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+        }
+
+        .book-card {
+            background: linear-gradient(145deg, #ffffff, #f1f5f9);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24 items-center">
+                <!-- Adjusted Logo & Brand -->
+                <a href="index.html" class="flex items-center gap-4 group">
+                    <div class="relative overflow-hidden rounded-lg shadow-sm border border-slate-100 bg-white p-1">
+                        <img src="https://res.cloudinary.com/dykgraurr/image/upload/logo.jpeg_fu9gu0" alt="Logo" class="h-12 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.style.display='none'">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-lg md:text-xl font-extrabold text-blue-900 tracking-tight leading-none">Karabo Rangwetsi</span>
+                        <span class="text-sm font-bold text-orange-500 uppercase tracking-widest mt-0.5">Foundation</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu Links Aligned Right -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="about.html" class="font-semibold text-slate-600 hover:text-orange-500 transition-colors">About</a>
+                    <a href="index.html#pillars" class="font-semibold text-slate-600 hover:text-orange-500 transition-colors">Our Pillars</a>
+                    <a href="index.html#book" class="font-semibold text-slate-600 hover:text-orange-500 transition-colors">The Book</a>
+                    <a href="index.html#contact" class="bg-blue-900 text-white px-6 py-3 rounded-full font-bold hover:bg-orange-600 transition shadow-md active:scale-95">
+                        Get Involved
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-600 p-2 focus:outline-none" aria-label="Toggle Menu">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden bg-white border-t border-slate-100 md:hidden animate-in slide-in-from-top duration-300">
+            <div class="p-4 space-y-3">
+                <a href="about.html" class="block py-3 px-4 text-lg font-semibold text-slate-700 hover:bg-slate-50 rounded-xl">About Us</a>
+                <a href="index.html#pillars" class="block py-3 px-4 text-lg font-semibold text-slate-700 hover:bg-slate-50 rounded-xl">Our Pillars</a>
+                <a href="index.html#book" class="block py-3 px-4 text-lg font-semibold text-slate-700 hover:bg-slate-50 rounded-xl">The Book</a>
+                <a href="index.html#contact" class="block bg-orange-500 text-white p-4 rounded-xl text-center font-bold shadow-lg">Donate Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center text-white pt-24 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="inline-block bg-orange-500 text-white text-xs font-bold uppercase tracking-widest px-4 py-1 rounded-full mb-6 shadow-lg">Changing Lives Daily</span>
+            <h1 class="text-4xl md:text-7xl font-bold leading-tight mb-6">
+                Empowering Survivors<br>Promoting Healing<br>Inspiring <span class="text-orange-400">Change</span>.
+            </h1>
+            <p class="text-lg md:text-xl text-slate-200 mb-10 max-w-2xl mx-auto leading-relaxed">
+             The Karabo Rangwetsi Foundation (KRF) is a South African Non-Profit Organisation established to provide structured, professional and sustainable support services to victims and survivors of abuse and sexual violence.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-white px-10 py-4 rounded-full text-lg font-bold transition transform hover:scale-105 shadow-xl">
+                    Become a Partner
+                </a>
+                <a href="#pillars" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-10 py-4 rounded-full text-lg font-bold transition">
+                    Our Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Pillars -->
+    <section id="pillars" class="py-24 px-4 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-5xl font-bold text-blue-900 mb-4">Our Focus Areas</h2>
+                <div class="h-1.5 w-24 bg-orange-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pillar 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border-b-4 border-orange-500 reveal">
+                    <div class="w-16 h-16 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-graduation-cap text-3xl text-blue-900"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Legal Awareness & Advocacy</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Helping survivors understand their rights and access justice.</p>
+                </div>
+                <!-- Pillar 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border-b-4 border-blue-900 reveal">
+                    <div class="w-16 h-16 bg-orange-50 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-hand-holding-heart text-3xl text-orange-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Social Welfare</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Programs focused on rebuilding independence, dignity, and empowerment for those in need.
+                    </p>
+                </div>
+                <!-- Pillar 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border-b-4 border-orange-500 reveal">
+                    <div class="w-16 h-16 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-users text-3xl text-blue-900"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Prevention & Community Awareness</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Facilitating dialogues and projects that strengthen the social fabric and infrastructure of our neighborhoods.
+                    </p>
+                </div>
+                <!-- Pillar 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border-b-4 border-orange-500 reveal">
+                    <div class="w-16 h-16 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-users text-3xl text-blue-900"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Counseling & Psychological Support</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Trauma-informed counselling services supporting recovery and wellbeing.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Section -->
+    <section id="book" class="py-24 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Book Image Column -->
+                <div class="reveal flex justify-center">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-orange-500/10 rounded-3xl blur-2xl group-hover:bg-orange-500/20 transition duration-500"></div>
+                        <img src="https://res.cloudinary.com/dykgraurr/image/upload/book_cover.jpeg_fvl3ci" 
+                             alt="Book Mockup" 
+                             class="relative rounded-lg shadow-2xl w-full max-w-sm transform group-hover:scale-105 transition duration-500">
+                    </div>
+                </div>
+
+                <!-- Book Details Column -->
+                <div class="reveal">
+                    <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-6 leading-tight">
+                        "Invisible Scars, Visible Strength"<br>
+                        <span class="text-orange-500 text-2xl md:text-3xl font-semibold">By Karabo Rangwetsi</span>
+                    </h2>
+                    <p class="text-slate-600 text-lg mb-8 leading-relaxed">
+                        A powerful memoir and guide designed to provide hope for those navigating the journey of healing. The author, Karabo Rangwetsi shares her experience about a lifetime marked by trauma, abuse and near-death experiences. She pencils how faith, courage and perseverance transformed those scars into strength.
+
+                        <br><br>In this moving account, Karabo shares a journey that began with multiple childhood and early adulthood traumas, including sexual assault, physical abuse, emotional suffering and being assaulted and left for dead. Yet, instead of focusing on the pain, the memoir turns its gaze towards healing, demonstrating that it is possible to rise above the darkest chapters of life.
+                    </p>
+                    
+                    <div class="space-y-4 mb-10">
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 bg-blue-100 p-1 rounded-full"><i class="fa-solid fa-check text-blue-900 text-xs"></i></div>
+                            <p class="text-slate-700 font-medium">Personal survival and triumph strategies</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 bg-blue-100 p-1 rounded-full"><i class="fa-solid fa-check text-blue-900 text-xs"></i></div>
+                            <p class="text-slate-700 font-medium">Resources for legal and emotional support</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://bookbay.co.za/product/invisible-scars-visible-strength/" target="_blank" rel="noopener noreferrer" class="bg-blue-900 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-orange-600 transition shadow-xl flex items-center justify-center gap-2">
+                             Purchase Online
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                    <p class="mt-4 text-sm text-slate-400 italic text-center sm:text-left">
+                        Secure payment powered by PayFast. Delivery nationwide within 3-5 days.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Story / Testimonial -->
+    <section class="py-24 bg-blue-900 text-white px-4 overflow-hidden relative">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal">
+                <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=800&q=80" alt="Success Story" class="rounded-3xl shadow-2xl rotate-2 hover:rotate-0 transition duration-500">
+            </div>
+            <div class="reveal">
+                <i class="fa-solid fa-quote-left text-5xl text-orange-500 mb-6"></i>
+                <h2 class="text-3xl font-bold mb-6 italic">"Help Us Empower Victims and Survivors. Your support enables counselling, legal awareness and empowerment programs."</h2>
+                <div class="flex items-center gap-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Demo Form -->
+    <section id="contact" class="py-24 px-4">
+        <div class="max-w-3xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden reveal">
+            <div class="bg-orange-500 p-8 text-white text-center">
+                <h2 class="text-3xl font-bold">Get In Touch</h2>
+                <p class="opacity-90">Partner with us or request assistance.</p>
+            </div>
+            <form id="demo-form" class="p-8 space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Full Name</label>
+                        <input type="text" required class="w-full p-3 rounded-lg border border-slate-200 focus:border-orange-500 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Email Address</label>
+                        <input type="email" required class="w-full p-3 rounded-lg border border-slate-200 focus:border-orange-500 outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2">Subject</label>
+                    <input type="text" required class="w-full p-3 rounded-lg border border-slate-200 focus:border-orange-500 outline-none transition">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2">Message</label>
+                    <textarea rows="4" required class="w-full p-3 rounded-lg border border-slate-200 focus:border-orange-500 outline-none transition"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-900 text-white py-4 rounded-lg font-bold text-lg hover:bg-orange-600 transition shadow-lg">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-20 px-4">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 items-start">
+            <!-- Brand Section with Adjusted Logo -->
+            <div class="col-span-2">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="bg-white p-1 rounded shadow-sm inline-flex items-center justify-center">
+                        <img src="https://res.cloudinary.com/dykgraurr/image/upload/logo.jpeg_fu9gu0" alt="KRF Logo" class="h-10 w-auto object-contain">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-bold text-white tracking-tight leading-none">Karabo Rangwetsi</span>
+                        <span class="text-xs font-bold text-orange-500 uppercase tracking-widest mt-1">Foundation</span>
+                    </div>
+                </div>
+                <p class="text-slate-400 max-w-sm mb-8 leading-relaxed">
+                    Registered Non-Profit Organization. Dedicated to the uplifting of South African communities through empathy, empowerment, and excellence.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/karaborangwetsifoundation/?hl=en" target="_blank" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Column -->
+            <div>
+                <h4 class="font-bold text-lg mb-6 text-white uppercase tracking-widest">Connect</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-envelope mt-1 text-orange-500"></i>
+                        <span>karaborangwetsifoundation@gmail.com</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-phone mt-1 text-orange-500"></i>
+                        <span>+27 83 596 0882</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot mt-1 text-orange-500"></i>
+                        <span>Johannesburg, South Africa</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto border-t border-slate-800 mt-16 pt-8 text-center">
+            <p class="text-slate-500 text-sm">
+                &copy; 2026 Karabo Rangwetsi Foundation. All Rights Reserved.
+            </p>
+            <div class="mt-2 text-[10px] text-slate-700 uppercase tracking-[0.2em]">
+                Designed by A.Ramolefi | Powered by Tailwind CSS
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="md:hidden fixed bottom-0 left-0 w-full sticky-cta bg-white p-4 flex gap-4 z-50">
+        <a href="https://wa.me/27835960882" target="_blank" class="flex-1 bg-green-500 text-white py-3 rounded-xl font-bold text-center flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp Us
+        </a>
+        <a href="#contact" class="flex-1 bg-blue-900 text-white py-3 rounded-xl font-bold text-center">
+            Donate Now
+        </a>
+    </div>
+
+    <script>
+        // Scroll Animations (Intersection Observer)
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form Submission Demo
+        document.getElementById('demo-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Message Received',
+                text: 'This is a demo. In a live production environment, your message would be sent to the foundation staff.',
+                icon: 'success',
+                confirmButtonColor: '#1e3a8a',
+                confirmButtonText: 'Understood'
+            });
+            this.reset();
+        });
+
+        // Smooth Scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const target = document.querySelector(targetId);
+                if (target) {
+                    e.preventDefault();
+                    if (mobileMenu) mobileMenu.classList.add('hidden');
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
