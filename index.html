@@ -77,6 +77,7 @@
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="about.html" class="font-semibold text-slate-600 hover:text-orange-500 transition-colors">About</a>
                     <a href="index.html#pillars" class="font-semibold text-slate-600 hover:text-orange-500 transition-colors">Our Pillars</a>
+                    <a href="index.html#gallery" class="font-semibold text-slate-600 hover:text-orange-500 transition-colors">Gallery</a>
                     <a href="index.html#book" class="font-semibold text-slate-600 hover:text-orange-500 transition-colors">The Book</a>
                     <a href="index.html#contact" class="bg-blue-900 text-white px-6 py-3 rounded-full font-bold hover:bg-orange-600 transition shadow-md active:scale-95">
                         Get Involved
@@ -97,6 +98,7 @@
             <div class="p-4 space-y-3">
                 <a href="about.html" class="block py-3 px-4 text-lg font-semibold text-slate-700 hover:bg-slate-50 rounded-xl">About Us</a>
                 <a href="index.html#pillars" class="block py-3 px-4 text-lg font-semibold text-slate-700 hover:bg-slate-50 rounded-xl">Our Pillars</a>
+                <a href="index.html#gallery" class="block py-3 px-4 text-lg font-semibold text-slate-700 hover:bg-slate-50 rounded-xl">Gallery</a>
                 <a href="index.html#book" class="block py-3 px-4 text-lg font-semibold text-slate-700 hover:bg-slate-50 rounded-xl">The Book</a>
                 <a href="index.html#contact" class="block bg-orange-500 text-white p-4 rounded-xl text-center font-bold shadow-lg">Donate Now</a>
             </div>
@@ -223,6 +225,140 @@
         </div>
     </section>
 
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 px-4 bg-slate-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12 reveal">
+                <span class="text-orange-500 font-bold uppercase tracking-wider text-sm">Visual Journey</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-blue-900 mt-2 mb-4">Our Impact in Action</h2>
+                <div class="h-1.5 w-24 bg-orange-500 mx-auto rounded-full mb-6"></div>
+                <p class="text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                    Capturing moments of community engagement, survivor support, awareness drives, and empowering dialogues across South Africa.
+                </p>
+            </div>
+
+            <!-- Gallery Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12 reveal">
+                <button class="gallery-filter-btn active bg-blue-900 text-white px-6 py-2.5 rounded-full font-semibold text-sm transition shadow-md" data-filter="all">All Photos</button>
+                <button class="gallery-filter-btn bg-white text-slate-700 hover:bg-orange-500 hover:text-white px-6 py-2.5 rounded-full font-semibold text-sm transition shadow-sm border border-slate-200" data-filter="outreach">Community Outreach</button>
+                <button class="gallery-filter-btn bg-white text-slate-700 hover:bg-orange-500 hover:text-white px-6 py-2.5 rounded-full font-semibold text-sm transition shadow-sm border border-slate-200" data-filter="workshops">Workshops & Support</button>
+                <button class="gallery-filter-btn bg-white text-slate-700 hover:bg-orange-500 hover:text-white px-6 py-2.5 rounded-full font-semibold text-sm transition shadow-sm border border-slate-200" data-filter="events">Events & Advocacy</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item reveal group relative overflow-hidden rounded-2xl bg-slate-900 shadow-lg cursor-pointer" data-category="outreach" onclick="openLightbox('https://res.cloudinary.com/dykgraurr/image/upload/f_auto/q_auto/Unstoppable_Woman_jpeg2_lbk3m8.jpg', 'Community Dialogue Session', 'Facilitating open forums on trauma recovery and safety in local townships.')">
+                    <img src="https://res.cloudinary.com/dykgraurr/image/upload/f_auto/q_auto/Unstoppable_Woman_jpeg2_lbk3m8.jpg" alt="Outreach and Support" class="w-full h-72 object-cover transition duration-500 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-orange-400 text-xs font-bold uppercase tracking-wider mb-1">Community Outreach</span>
+                        <h4 class="text-white text-xl font-bold">Community Dialogue Session</h4>
+                        <p class="text-slate-200 text-xs mt-1">Click to expand</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item reveal group relative overflow-hidden rounded-2xl bg-slate-900 shadow-lg cursor-pointer" data-category="workshops" onclick="openLightbox('https://res.cloudinary.com/dykgraurr/image/upload/f_auto/q_auto/Unstoppable_Woman_jpeg1_l4xd5p.jpg', 'Youth Empowerment Workshop', 'Equipping young people with resources and legal knowledge regarding their human rights.')">
+                    <img src="https://res.cloudinary.com/dykgraurr/image/upload/f_auto/q_auto/Unstoppable_Woman_jpeg1_l4xd5p.jpg" alt="Community Outreach" class="w-full h-72 object-cover transition duration-500 group-hover:scale-110 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-orange-400 text-xs font-bold uppercase tracking-wider mb-1">Outreach & Support</span>
+                        <h4 class="text-white text-xl font-bold">Community Dialogue Session</h4>
+                        <p class="text-slate-200 text-xs mt-1">Click to expand</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 (Video Item) -->
+                <div class="gallery-item reveal group relative overflow-hidden rounded-2xl bg-slate-900 shadow-lg cursor-pointer" data-category="events" onclick="openLightbox('https://res.cloudinary.com/dykgraurr/video/upload/v1790073630/The_first_step_to_recovering_from_trauma_is_forgiving_yourself._eelcnd.mov', 'Keynote & Motivational Address', 'Founder Karabo Rangwetsi sharing her story.', 'video')">
+                    <video class="w-full h-72 object-cover opacity-80 group-hover:opacity-100 transition duration-500" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()">
+                        <source src="https://res.cloudinary.com/dykgraurr/video/upload/v1790073630/The_first_step_to_recovering_from_trauma_is_forgiving_yourself._eelcnd.mov" type="video/mp4">
+                    </video>
+                    <!-- Play Badge Overlay -->
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none group-hover:scale-110 transition duration-300">
+                        <div class="w-16 h-16 bg-orange-500/90 text-white rounded-full flex items-center justify-center shadow-xl backdrop-blur-sm">
+                            <i class="fa-solid fa-play text-2xl ml-1"></i>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-orange-400 text-xs font-bold uppercase tracking-wider mb-1 flex items-center gap-1.5"><i class="fa-solid fa-video"></i> Video • Events & Advocacy</span>
+                        <h4 class="text-white text-xl font-bold">Keynote & Motivational Address</h4>
+                        <p class="text-slate-200 text-xs mt-1">Click to watch video</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 (Video Item) -->
+                <div class="gallery-item reveal group relative overflow-hidden rounded-2xl bg-slate-900 shadow-lg cursor-pointer" data-category="workshops" onclick="openLightbox('https://res.cloudinary.com/dykgraurr/video/upload/v1790075654/abe30153-b525-4059-a00f-37af70a4cb47_stkijx.mov', 'Healing & Counseling Support Session', 'Providing trauma-informed psychological care, encouragement, and safe spaces for survivors.', 'video')">
+                    <video class="w-full h-72 object-cover opacity-80 group-hover:opacity-100 transition duration-500" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()">
+                        <source src="https://res.cloudinary.com/dykgraurr/video/upload/v1790075654/abe30153-b525-4059-a00f-37af70a4cb47_stkijx.mov" type="video/mp4">
+                    </video>
+                    <!-- Play Badge Overlay -->
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none group-hover:scale-110 transition duration-300">
+                        <div class="w-16 h-16 bg-orange-500/90 text-white rounded-full flex items-center justify-center shadow-xl backdrop-blur-sm">
+                            <i class="fa-solid fa-play text-2xl ml-1"></i>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-orange-400 text-xs font-bold uppercase tracking-wider mb-1 flex items-center gap-1.5"><i class="fa-solid fa-video"></i> Video • Workshops & Support</span>
+                        <h4 class="text-white text-xl font-bold">Healing & Support Session</h4>
+                        <p class="text-slate-200 text-xs mt-1">Click to watch video</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 (Video Item) -->
+                <div class="gallery-item reveal group relative overflow-hidden rounded-2xl bg-slate-900 shadow-lg cursor-pointer" data-category="outreach" onclick="openLightbox('https://res.cloudinary.com/dykgraurr/video/upload/v1790075429/Healing_is_possible._vraxmn.mov', 'Healing Is Possible Community Session', 'Inspirational dialogue highlighting that recovery and emotional restoration are achievable for every survivor.', 'video')">
+                    <video class="w-full h-72 object-cover opacity-80 group-hover:opacity-100 transition duration-500" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()">
+                        <source src="https://res.cloudinary.com/dykgraurr/video/upload/v1790075429/Healing_is_possible._vraxmn.mov" type="video/mp4">
+                    </video>
+                    <!-- Play Badge Overlay -->
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none group-hover:scale-110 transition duration-300">
+                        <div class="w-16 h-16 bg-orange-500/90 text-white rounded-full flex items-center justify-center shadow-xl backdrop-blur-sm">
+                            <i class="fa-solid fa-play text-2xl ml-1"></i>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-orange-400 text-xs font-bold uppercase tracking-wider mb-1 flex items-center gap-1.5"><i class="fa-solid fa-video"></i> Video • Community Outreach</span>
+                        <h4 class="text-white text-xl font-bold">Healing Is Possible</h4>
+                        <p class="text-slate-200 text-xs mt-1">Click to watch video</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 (Video Item) -->
+                <div class="gallery-item reveal group relative overflow-hidden rounded-2xl bg-slate-900 shadow-lg cursor-pointer" data-category="workshops" onclick="openLightbox('https://res.cloudinary.com/dykgraurr/video/upload/v1790075246/The_power_of_forgiveness_rslkj5.mov', 'The Power of Forgiveness Session', 'Inspiring address on releasing trauma and moving forward through the power of forgiveness.', 'video')">
+                    <video class="w-full h-72 object-cover opacity-80 group-hover:opacity-100 transition duration-500" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()">
+                        <source src="https://res.cloudinary.com/dykgraurr/video/upload/v1790075246/The_power_of_forgiveness_rslkj5.mov" type="video/mp4">
+                    </video>
+                    <!-- Play Badge Overlay -->
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none group-hover:scale-110 transition duration-300">
+                        <div class="w-16 h-16 bg-orange-500/90 text-white rounded-full flex items-center justify-center shadow-xl backdrop-blur-sm">
+                            <i class="fa-solid fa-play text-2xl ml-1"></i>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-950/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-orange-400 text-xs font-bold uppercase tracking-wider mb-1 flex items-center gap-1.5"><i class="fa-solid fa-video"></i> Video • Workshops & Support</span>
+                        <h4 class="text-white text-xl font-bold">The Power of Forgiveness</h4>
+                        <p class="text-slate-200 text-xs mt-1">Click to watch video</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 transition-all duration-300">
+        <button onclick="closeLightbox()" class="absolute top-4 right-4 sm:top-6 sm:right-6 text-white text-3xl hover:text-orange-500 focus:outline-none transition z-20" aria-label="Close Lightbox">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-4xl w-full bg-slate-900 rounded-3xl overflow-hidden shadow-2xl border border-slate-800 flex flex-col max-h-[92vh] my-auto">
+            <div id="lightbox-media-container" class="w-full flex-1 min-h-0 h-[50vh] sm:h-[60vh] max-h-[65vh] flex items-center justify-center bg-black overflow-hidden relative p-2 sm:p-4">
+                <img id="lightbox-img" src="" alt="Enlarged View" class="max-w-full max-h-full w-auto h-auto object-contain bg-black mx-auto">
+                <video id="lightbox-video" class="max-w-full max-h-full w-auto h-auto object-contain bg-black rounded-xl mx-auto hidden shadow-lg" controls autoplay playsinline></video>
+            </div>
+            <div class="p-5 sm:p-6 text-white bg-slate-900 flex-shrink-0 border-t border-slate-800">
+                <h3 id="lightbox-title" class="text-xl sm:text-2xl font-bold text-orange-400 mb-1 sm:mb-2"></h3>
+                <p id="lightbox-desc" class="text-slate-300 text-xs sm:text-sm leading-relaxed"></p>
+            </div>
+        </div>
+    </div>
+
     <!-- Impact Story / Testimonial -->
     <section class="py-24 bg-blue-900 text-white px-4 overflow-hidden relative">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -316,7 +452,7 @@
                     <li class="flex items-start gap-3 group">
                         <i class="fa-solid fa-envelope mt-1 text-orange-500"></i>
                         <a href="mailto:karaborangwetsifoundation@gmail.com" class="hover:text-orange-500 transition-colors break-all">
-                           karabo@karaborangwetsifoundation.co.za
+                            karabo@karaborangwetsifoundation.co.za
                         </a>
                     </li>
                     <li class="flex items-start gap-3 group">
@@ -371,6 +507,75 @@
         const menuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+        // Gallery Filter Logic
+        const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('active', 'bg-blue-900', 'text-white');
+                    b.classList.add('bg-white', 'text-slate-700');
+                });
+                btn.classList.add('active', 'bg-blue-900', 'text-white');
+                btn.classList.remove('bg-white', 'text-slate-700');
+
+                const filter = btn.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Lightbox Functions
+        function openLightbox(mediaSrc, title, description, type = 'image') {
+            const modal = document.getElementById('lightbox-modal');
+            const imgEl = document.getElementById('lightbox-img');
+            const videoEl = document.getElementById('lightbox-video');
+
+            const isVideo = type === 'video' || mediaSrc.match(/\.(mov|mp4|webm)($|\?)/i);
+
+            if (isVideo) {
+                imgEl.classList.add('hidden');
+                imgEl.src = '';
+                videoEl.classList.remove('hidden');
+                videoEl.src = mediaSrc;
+                videoEl.load();
+                videoEl.play().catch(e => console.log('Autoplay prevented:', e));
+            } else {
+                if (videoEl) {
+                    videoEl.pause();
+                    videoEl.src = '';
+                    videoEl.classList.add('hidden');
+                }
+                imgEl.classList.remove('hidden');
+                imgEl.src = mediaSrc;
+            }
+
+            document.getElementById('lightbox-title').innerText = title;
+            document.getElementById('lightbox-desc').innerText = description;
+            modal.classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightbox-modal');
+            const videoEl = document.getElementById('lightbox-video');
+            if (videoEl) {
+                videoEl.pause();
+                videoEl.src = '';
+            }
+            modal.classList.add('hidden');
+        }
+
+        document.getElementById('lightbox-modal')?.addEventListener('click', (e) => {
+            if (e.target === e.currentTarget) closeLightbox();
+        });
 
         // WhatsApp Form Integration
         document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
