@@ -327,7 +327,7 @@
                 <div class="gallery-item reveal group relative overflow-hidden rounded-2xl bg-slate-950 shadow-lg cursor-pointer transition-all duration-500 flex flex-col justify-between" data-category="workshops" onclick="toggleExpandGalleryCard(this, event)">
                     <div class="media-container w-full h-80 bg-slate-950 flex items-center justify-center p-2 overflow-hidden relative transition-all duration-500">
                         <video class="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition duration-500" muted loop playsinline onmouseover="this.play()" onmouseout="if(!this.hasAttribute('controls')) this.pause()">
-                            <source src="https://res.cloudinary.com/dykgraurr/video/upload/v1790075654/abe30153-b525-4059-a00f-37af70a4cb47_stkijx.mov" type="video/mp4">
+                            <source src="https://res.cloudinary.com/dykgraurr/video/upload/v1790162943/WhatsApp_Video_2026-09-23_at_13.26.49_fixpt8.mp4" type="video/mp4">
                         </video>
                         <div class="play-badge absolute inset-0 flex items-center justify-center pointer-events-none group-hover:scale-110 transition duration-300">
                             <div class="w-16 h-16 bg-orange-500/90 text-white rounded-full flex items-center justify-center shadow-xl backdrop-blur-sm">
@@ -409,20 +409,33 @@
                         <p class="text-slate-300 text-sm leading-relaxed">Inspiring address on releasing trauma and moving forward through the power of forgiveness.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Impact Story / Testimonial -->
-    <section class="py-24 bg-blue-900 text-white px-4 overflow-hidden relative">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div class="reveal">
-                <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=800&q=80" alt="Success Story" class="rounded-3xl shadow-2xl rotate-2 hover:rotate-0 transition duration-500">
-            </div>
-            <div class="reveal">
-                <i class="fa-solid fa-quote-left text-5xl text-orange-500 mb-6"></i>
-                <h2 class="text-3xl font-bold mb-6 italic">"Help Us Empower Victims and Survivors. Your support enables counselling, legal awareness and empowerment programs."</h2>
-                <div class="flex items-center gap-4">
+                <!-- Gallery Item 7 (Video Item - Community Outreach) -->
+                <div class="gallery-item reveal group relative overflow-hidden rounded-2xl bg-slate-950 shadow-lg cursor-pointer transition-all duration-500 flex flex-col justify-between" data-category="outreach" onclick="toggleExpandGalleryCard(this, event)">
+                    <div class="media-container w-full h-80 bg-slate-950 flex items-center justify-center p-2 overflow-hidden relative transition-all duration-500">
+                        <video class="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition duration-500" muted loop playsinline onmouseover="this.play()" onmouseout="if(!this.hasAttribute('controls')) this.pause()">
+                            <source src="https://res.cloudinary.com/dykgraurr/video/upload/v1790154685/Workshop_for_caregivers_in_Katlehong_East_of_Johannesburg_j4csya.mp4" type="video/mp4">
+                        </video>
+                        <div class="play-badge absolute inset-0 flex items-center justify-center pointer-events-none group-hover:scale-110 transition duration-300">
+                            <div class="w-16 h-16 bg-orange-500/90 text-white rounded-full flex items-center justify-center shadow-xl backdrop-blur-sm">
+                                <i class="fa-solid fa-play text-2xl ml-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-overlay absolute inset-0 bg-gradient-to-t from-blue-950/95 via-blue-950/50 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6 pointer-events-none">
+                        <span class="text-orange-400 text-xs font-bold uppercase tracking-wider mb-1 flex items-center gap-1.5"><i class="fa-solid fa-video"></i> Video • Community Outreach</span>
+                        <h4 class="text-white text-xl font-bold">Workshop for Caregivers in Katlehong</h4>
+                        <p class="text-slate-200 text-xs mt-1 flex items-center gap-1"><i class="fa-solid fa-expand text-orange-400"></i> Click to expand full video</p>
+                    </div>
+                    <div class="card-details-bar hidden bg-slate-900 p-6 border-t border-slate-800 text-white">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-orange-400 text-xs font-bold uppercase tracking-wider flex items-center gap-1"><i class="fa-solid fa-video"></i> Video • Community Outreach</span>
+                            <button type="button" class="text-xs bg-orange-500 hover:bg-orange-600 text-white font-bold px-3.5 py-1.5 rounded-full transition flex items-center gap-1" onclick="event.stopPropagation(); collapseGalleryCard(this.closest('.gallery-item'))">
+                                <i class="fa-solid fa-compress"></i> Close Full View
+                            </button>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">Workshop for Caregivers in Katlehong</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed">Empowering and supporting caregivers through dedicated community workshops in Katlehong, East of Johannesburg.</p>
                     </div>
                 </div>
             </div>
