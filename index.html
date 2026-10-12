@@ -224,6 +224,105 @@
                             <i class="fa-solid fa-cart-shopping"></i>
                         </a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Review & Testimonial Section -->
+    <section id="reviews" class="py-24 px-4 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <span class="text-orange-500 font-bold uppercase tracking-wider text-sm">Reader Testimonials</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-blue-900 mt-2 mb-4">Reviews & Impact</h2>
+                <div class="h-1.5 w-24 bg-orange-500 mx-auto rounded-full mb-6"></div>
+                <p class="text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                    Read what readers are saying about "Invisible Scars, Visible Strength" or submit your own review directly to our team via WhatsApp.
+                </p>
+            </div>
+
+            <!-- Existing Reviews Grid -->
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <!-- Review Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 reveal">
+                    <div class="flex items-center gap-1 text-orange-400 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-700 italic mb-6 leading-relaxed">
+                        "Thank you for immense inspiration you provided with "Invisible Scars". I'm a final year medical student at Wits I'm 25 yrs. Your testimony gave me a light beacon.
+                        I carried the heavy weight of my survival including the devastating loss of parents, sexual assualts, navigating depression, and many more. You helped me realise
+                        that my deepest vulnerability can coexist with my professional identity as a future doctor. Thank you for changing my life."
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-blue-900">God is love</span>
+                    </div>
+                </div>
+
+                <!-- Review Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 reveal">
+                    <div class="flex items-center gap-1 text-orange-400 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-700 italic mb-6 leading-relaxed">
+                        "Dear Karabo Rangwetsi, I have just started reading your book and cannot continue. Please assure me that mmamogolo Mantsho got what she deserved at the end,
+                        including Amon and crew. Tjeerrr! I can't read further."
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-blue-900">B.A Lubisi</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review Submission Form Box -->
+            <div class="max-w-3xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden reveal border border-slate-100">
+                <div class="bg-blue-900 p-8 text-white text-center">
+                    <h3 class="text-2xl font-bold mb-2">Leave Your Book Review</h3>
+                    <p class="opacity-80 text-sm">Submit your rating and thoughts. This will format your review directly for WhatsApp.</p>
+                </div>
+                
+                <form id="review-whatsapp-form" class="p-8 space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Your Name</label>
+                            <input type="text" id="review-name" name="name" required placeholder="Enter your full name"
+                                   class="w-full p-4 rounded-xl border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">Star Rating</label>
+                            <select id="review-rating" name="rating" required
+                                    class="w-full p-4 rounded-xl border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition bg-white">
+                                <option value="" disabled selected>Select rating</option>
+                                <option value="⭐⭐⭐⭐⭐ (5/5 Stars)">⭐⭐⭐⭐⭐ (5/5 Stars - Exceptional)</option>
+                                <option value="⭐⭐⭐⭐ (4/5 Stars)">⭐⭐⭐⭐ (4/5 Stars - Very Good)</option>
+                                <option value="⭐⭐⭐ (3/5 Stars)">⭐⭐⭐ (3/5 Stars - Good)</option>
+                                <option value="⭐⭐ (2/5 Stars)">⭐⭐ (2/5 Stars - Fair)</option>
+                                <option value="⭐ (1/5 Stars)">⭐ (1/5 Star)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Your Review / Testimonial</label>
+                        <textarea id="review-message" name="message" rows="4" required placeholder="Share how this book impacted you..."
+                                  class="w-full p-4 rounded-xl border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-orange-500 text-white py-5 rounded-xl font-bold text-lg hover:bg-orange-600 transition shadow-xl transform active:scale-95 flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        Send Review via WhatsApp
+                    </button>
+                    
+                    <p class="text-center text-xs text-slate-400">
+                        Your review will be sent directly to the Karabo Rangwetsi Foundation WhatsApp line (+27 79 319 8930).
+                    </p>
+                </form>
             </div>
         </div>
     </section>
@@ -337,7 +436,7 @@
                     </div>
                     <div class="card-overlay absolute inset-0 bg-gradient-to-t from-blue-950/95 via-blue-950/50 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6 pointer-events-none">
                         <span class="text-orange-400 text-xs font-bold uppercase tracking-wider mb-1 flex items-center gap-1.5"><i class="fa-solid fa-video"></i> Video • Events & Advocacy</span>
-                        <h4 class="text-white text-xl font-bold">Breast Cancer Awareness.</h4>
+                        <h4 class="text-white text-xl font-bold">Breast Cancer Awareness</h4>
                         <p class="text-slate-200 text-xs mt-1 flex items-center gap-1"><i class="fa-solid fa-expand text-orange-400"></i> Click to expand full video</p>
                     </div>
                     <div class="card-details-bar hidden bg-slate-900 p-6 border-t border-slate-800 text-white">
@@ -575,7 +674,6 @@
 
         <div class="max-w-7xl mx-auto border-t border-slate-800 mt-16 pt-8 text-center text-slate-500 text-sm">
             &copy; 2026 Karabo Rangwetsi Foundation. All Rights Reserved.
-         </p>
             <div class="mt-2 text-[10px] text-slate-700 uppercase tracking-[0.2em]">
                 Designed by A.Ramolefi | Powered by Tailwind CSS
             </div>
@@ -649,7 +747,7 @@
         });
 
         function toggleExpandGalleryCard(card, event) {
-            if (event && (event.target.tagName === 'BUTTON' || event.target.closest('button'))) {
+            if (event && (event.target.tagName === 'BUTTON' || event.target.closest('button') || event.target.tagName === 'VIDEO')) {
                 return;
             }
 
@@ -745,7 +843,7 @@
             }
         }
 
-        // WhatsApp Form Integration
+        // WhatsApp Form Integration (Contact)
         document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -754,7 +852,6 @@
             const message = document.getElementById('message').value;
             const phoneNumber = "27793198930"; // Foundation Number
 
-            // Constructing the message template
             const text = `*New Inquiry from Website*%0A%0A` +
                          `*Name:* ${encodeURIComponent(name)}%0A` +
                          `*Subject:* ${encodeURIComponent(subject)}%0A` +
@@ -768,6 +865,37 @@
                 text: 'You will now be redirected to WhatsApp to send your message.',
                 icon: 'info',
                 confirmButtonColor: '#1e3a8a',
+                confirmButtonText: 'Proceed'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.open(whatsappUrl, '_blank');
+                    this.reset();
+                }
+            });
+        });
+
+        // WhatsApp Form Integration (Book Reviews)
+        document.getElementById('review-whatsapp-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('review-name').value;
+            const rating = document.getElementById('review-rating').value;
+            const message = document.getElementById('review-message').value;
+            const phoneNumber = "27793198930"; // Foundation Number
+
+            const text = `*New Book Review / Testimonial*%0A%0A` +
+                         `*Name:* ${encodeURIComponent(name)}%0A` +
+                         `*Rating:* ${encodeURIComponent(rating)}%0A` +
+                         `*Review:* ${encodeURIComponent(message)}%0A%0A` +
+                         `_Submitted via Karabo Rangwetsi Foundation Website_`;
+
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${text}`;
+
+            Swal.fire({
+                title: 'Sending Review to WhatsApp...',
+                text: 'You will now be redirected to WhatsApp to submit your book review.',
+                icon: 'info',
+                confirmButtonColor: '#f97316',
                 confirmButtonText: 'Proceed'
             }).then((result) => {
                 if (result.isConfirmed) {
