@@ -395,10 +395,8 @@
 
                 <!-- Gallery Item 3 (Video Item) -->
                 <div class="gallery-item reveal group relative overflow-hidden rounded-2xl bg-slate-950 shadow-lg cursor-pointer transition-all duration-500 flex flex-col justify-between" data-category="events" onclick="toggleExpandGalleryCard(this, event)">
-                    <div class="media-container w-full h-80 bg-slate-950 flex items-center justify-center p-2 overflow-hidden relative transition-all duration-500">
-                        <video class="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition duration-500" preload="metadata" muted loop playsinline onmouseover="safePlay(this)" onmouseout="safePause(this)">
-                            <source src="https://res.cloudinary.com/dykgraurr/video/upload/v1790073630/The_first_step_to_recovering_from_trauma_is_forgiving_yourself._eelcnd.mov" type="video/mp4">
-                        </video>
+                    <div class="media-container w-full h-80 bg-slate-950 flex items-center justify-center p-2 overflow-hidden relative transition-all duration-500" onclick="handleVideoWrapperClick(event, this)">
+                        <video class="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition duration-500" preload="metadata" muted loop playsinline onmouseover="safePlay(this)" onmouseout="safePause(this)" onclick="handleVideoClick(event, this)"></video>
                         <div class="play-badge absolute inset-0 flex items-center justify-center pointer-events-none group-hover:scale-110 transition duration-300">
                             <div class="w-16 h-16 bg-orange-500/90 text-white rounded-full flex items-center justify-center shadow-xl backdrop-blur-sm">
                                 <i class="fa-solid fa-play text-2xl ml-1"></i>
@@ -424,10 +422,8 @@
 
                 <!-- Gallery Item: New Events & Advocacy Video -->
                 <div class="gallery-item reveal group relative overflow-hidden rounded-2xl bg-slate-950 shadow-lg cursor-pointer transition-all duration-500 flex flex-col justify-between" data-category="events" onclick="toggleExpandGalleryCard(this, event)">
-                    <div class="media-container w-full h-80 bg-slate-950 flex items-center justify-center p-2 overflow-hidden relative transition-all duration-500">
-                        <video class="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition duration-500" preload="metadata" muted loop playsinline onmouseover="safePlay(this)" onmouseout="safePause(this)">
-                            <source src="https://res.cloudinary.com/dykgraurr/video/upload/v1791793855/WhatsApp_Video_2026-10-08_at_10.37.45_ngx4t3.mp4" type="video/mp4">
-                        </video>
+                    <div class="media-container w-full h-80 bg-slate-950 flex items-center justify-center p-2 overflow-hidden relative transition-all duration-500" onclick="handleVideoWrapperClick(event, this)">
+                        <video class="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition duration-500" preload="metadata" muted loop playsinline onmouseover="safePlay(this)" onmouseout="safePause(this)" onclick="handleVideoClick(event, this)"></video>
                         <div class="play-badge absolute inset-0 flex items-center justify-center pointer-events-none group-hover:scale-110 transition duration-300">
                             <div class="w-16 h-16 bg-orange-500/90 text-white rounded-full flex items-center justify-center shadow-xl backdrop-blur-sm">
                                 <i class="fa-solid fa-play text-2xl ml-1"></i>
@@ -453,10 +449,8 @@
 
                 <!-- Gallery Item 4 (Video Item) -->
                 <div class="gallery-item reveal group relative overflow-hidden rounded-2xl bg-slate-950 shadow-lg cursor-pointer transition-all duration-500 flex flex-col justify-between" data-category="workshops" onclick="toggleExpandGalleryCard(this, event)">
-                    <div class="media-container w-full h-80 bg-slate-950 flex items-center justify-center p-2 overflow-hidden relative transition-all duration-500">
-                        <video class="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition duration-500" preload="metadata" muted loop playsinline onmouseover="safePlay(this)" onmouseout="safePause(this)">
-                            <source src="https://res.cloudinary.com/dykgraurr/video/upload/v1790162943/WhatsApp_Video_2026-09-23_at_13.26.49_fixpt8.mp4" type="video/mp4">
-                        </video>
+                    <div class="media-container w-full h-80 bg-slate-950 flex items-center justify-center p-2 overflow-hidden relative transition-all duration-500" onclick="handleVideoWrapperClick(event, this)">
+                        <video class="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition duration-500" preload="metadata" muted loop playsinline onmouseover="safePlay(this)" onmouseout="safePause(this)" onclick="handleVideoClick(event, this)"></video>
                         <div class="play-badge absolute inset-0 flex items-center justify-center pointer-events-none group-hover:scale-110 transition duration-300">
                             <div class="w-16 h-16 bg-orange-500/90 text-white rounded-full flex items-center justify-center shadow-xl backdrop-blur-sm">
                                 <i class="fa-solid fa-play text-2xl ml-1"></i>
@@ -482,10 +476,8 @@
 
                 <!-- Gallery Item 5 (Video Item) -->
                 <div class="gallery-item reveal group relative overflow-hidden rounded-2xl bg-slate-950 shadow-lg cursor-pointer transition-all duration-500 flex flex-col justify-between" data-category="outreach" onclick="toggleExpandGalleryCard(this, event)">
-                    <div class="media-container w-full h-80 bg-slate-950 flex items-center justify-center p-2 overflow-hidden relative transition-all duration-500">
-                        <video class="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition duration-500" preload="metadata" muted loop playsinline onmouseover="safePlay(this)" onmouseout="safePause(this)">
-                            <source src="https://res.cloudinary.com/dykgraurr/video/upload/v1790075429/Healing_is_possible._vraxmn.mov" type="video/mp4">
-                        </video>
+                    <div class="media-container w-full h-80 bg-slate-950 flex items-center justify-center p-2 overflow-hidden relative transition-all duration-500" onclick="handleVideoWrapperClick(event, this)">
+                        <video class="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition duration-500" preload="metadata" muted loop playsinline onmouseover="safePlay(this)" onmouseout="safePause(this)" onclick="handleVideoClick(event, this)"></video>
                         <div class="play-badge absolute inset-0 flex items-center justify-center pointer-events-none group-hover:scale-110 transition duration-300">
                             <div class="w-16 h-16 bg-orange-500/90 text-white rounded-full flex items-center justify-center shadow-xl backdrop-blur-sm">
                                 <i class="fa-solid fa-play text-2xl ml-1"></i>
@@ -511,10 +503,8 @@
 
                 <!-- Gallery Item 6 (Video Item) -->
                 <div class="gallery-item reveal group relative overflow-hidden rounded-2xl bg-slate-950 shadow-lg cursor-pointer transition-all duration-500 flex flex-col justify-between" data-category="workshops" onclick="toggleExpandGalleryCard(this, event)">
-                    <div class="media-container w-full h-80 bg-slate-950 flex items-center justify-center p-2 overflow-hidden relative transition-all duration-500">
-                        <video class="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition duration-500" preload="metadata" muted loop playsinline onmouseover="safePlay(this)" onmouseout="safePause(this)">
-                            <source src="https://res.cloudinary.com/dykgraurr/video/upload/v1790075246/The_power_of_forgiveness_rslkj5.mov" type="video/mp4">
-                        </video>
+                    <div class="media-container w-full h-80 bg-slate-950 flex items-center justify-center p-2 overflow-hidden relative transition-all duration-500" onclick="handleVideoWrapperClick(event, this)">
+                        <video class="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition duration-500" preload="metadata" muted loop playsinline onmouseover="safePlay(this)" onmouseout="safePause(this)" onclick="handleVideoClick(event, this)"></video>
                         <div class="play-badge absolute inset-0 flex items-center justify-center pointer-events-none group-hover:scale-110 transition duration-300">
                             <div class="w-16 h-16 bg-orange-500/90 text-white rounded-full flex items-center justify-center shadow-xl backdrop-blur-sm">
                                 <i class="fa-solid fa-play text-2xl ml-1"></i>
@@ -540,10 +530,8 @@
 
                 <!-- Gallery Item 7 (Video Item - Community Outreach) -->
                 <div class="gallery-item reveal group relative overflow-hidden rounded-2xl bg-slate-950 shadow-lg cursor-pointer transition-all duration-500 flex flex-col justify-between" data-category="outreach" onclick="toggleExpandGalleryCard(this, event)">
-                    <div class="media-container w-full h-80 bg-slate-950 flex items-center justify-center p-2 overflow-hidden relative transition-all duration-500">
-                        <video class="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition duration-500" preload="metadata" muted loop playsinline onmouseover="safePlay(this)" onmouseout="safePause(this)">
-                            <source src="https://res.cloudinary.com/dykgraurr/video/upload/v1790154685/Workshop_for_caregivers_in_Katlehong_East_of_Johannesburg_j4csya.mp4" type="video/mp4">
-                        </video>
+                    <div class="media-container w-full h-80 bg-slate-950 flex items-center justify-center p-2 overflow-hidden relative transition-all duration-500" onclick="handleVideoWrapperClick(event, this)">
+                        <video class="w-full h-full object-contain opacity-90 group-hover:opacity-100 transition duration-500" preload="metadata" muted loop playsinline onmouseover="safePlay(this)" onmouseout="safePause(this)" onclick="handleVideoClick(event, this)"></video>
                         <div class="play-badge absolute inset-0 flex items-center justify-center pointer-events-none group-hover:scale-110 transition duration-300">
                             <div class="w-16 h-16 bg-orange-500/90 text-white rounded-full flex items-center justify-center shadow-xl backdrop-blur-sm">
                                 <i class="fa-solid fa-play text-2xl ml-1"></i>
@@ -688,6 +676,31 @@
     </div>
 
     <script>
+        // Store video sources securely to prevent DOM loading glitches
+        const videoSources = {
+            2: "https://res.cloudinary.com/dykgraurr/video/upload/v1790073630/The_first_step_to_recovering_from_trauma_is_forgiving_yourself._eelcnd.mov",
+            3: "https://res.cloudinary.com/dykgraurr/video/upload/v1791793855/WhatsApp_Video_2026-10-08_at_10.37.45_ngx4t3.mp4",
+            4: "https://res.cloudinary.com/dykgraurr/video/upload/v1790162943/WhatsApp_Video_2026-09-23_at_13.26.49_fixpt8.mp4",
+            5: "https://res.cloudinary.com/dykgraurr/video/upload/v1790075429/Healing_is_possible._vraxmn.mov",
+            6: "https://res.cloudinary.com/dykgraurr/video/upload/v1790075246/The_power_of_forgiveness_rslkj5.mov",
+            7: "https://res.cloudinary.com/dykgraurr/video/upload/v1790154685/Workshop_for_caregivers_in_Katlehong_East_of_Johannesburg_j4csya.mp4"
+        };
+
+        // Initialize video sources on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const videoItems = document.querySelectorAll('.gallery-item video');
+            videoItems.forEach((video, index) => {
+                const mapKey = index + 2;
+                if (videoSources[mapKey] && !video.querySelector('source')) {
+                    const source = document.createElement('source');
+                    source.src = videoSources[mapKey];
+                    source.type = "video/mp4";
+                    video.appendChild(source);
+                    video.load();
+                }
+            });
+        });
+
         // Safe video play/pause helpers to prevent AbortError when rapid mouse events happen
         function safePlay(videoEl) {
             if (videoEl.paused) {
@@ -703,6 +716,28 @@
         function safePause(videoEl) {
             if (!videoEl.hasAttribute('controls') && !videoEl.paused) {
                 videoEl.pause();
+            }
+        }
+
+        function handleVideoWrapperClick(event, wrapper) {
+            event.stopPropagation();
+            const card = wrapper.closest('.gallery-item');
+            if (!card.classList.contains('expanded-card')) {
+                expandGalleryCard(card);
+            }
+        }
+
+        function handleVideoClick(event, videoEl) {
+            event.stopPropagation();
+            const card = videoEl.closest('.gallery-item');
+            if (card.classList.contains('expanded-card')) {
+                if (videoEl.paused) {
+                    safePlay(videoEl);
+                } else {
+                    videoEl.pause();
+                }
+            } else {
+                expandGalleryCard(card);
             }
         }
 
@@ -770,7 +805,7 @@
             const mediaContainer = card.querySelector('.media-container');
             if (mediaContainer) {
                 mediaContainer.classList.remove('h-80');
-                mediaContainer.classList.add('h-auto', 'min-h-[350px]', 'max-h-[82vh]');
+                mediaContainer.classList.add('h-auto', 'min-h-[400px]', 'max-h-[85vh]');
             }
 
             const cardOverlay = card.querySelector('.card-overlay');
@@ -805,7 +840,7 @@
 
             const mediaContainer = card.querySelector('.media-container');
             if (mediaContainer) {
-                mediaContainer.classList.remove('h-auto', 'min-h-[350px]', 'max-h-[82vh]');
+                mediaContainer.classList.remove('h-auto', 'min-h-[400px]', 'max-h-[85vh]');
                 mediaContainer.classList.add('h-80');
             }
 
